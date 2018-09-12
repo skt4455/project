@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,
+	minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+  <title>coca</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" type="text/css" href="coca.css" />
+	<link rel="shortcut icon" href="favicon.ico">				
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="dist/fullpage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+ </head>
+ <body>
+	<div id="fullpage">
+		<div class="section">
+			<p class="com_home"><a href="#">Company Home</a></p>
+			<p class="com_re"><a href="#">Company Reports</a></p>
+			<div class="slide" data-anchor="slide1"> 
+				<p class="s1t_txt">2017 Annual Review</p>
+				<p class="s1tit">THE COCA-COLA COMPANY</p>
+				<p class="s1tit2">beverages for life</p>
+			</div>
+			<div class="slide" data-anchor="slide2"> 
+				<video autoplay="autoplay" loop id="vd" muted playsinline
+				webkit-playsinline >
+					<source data-src="images/vd/TBC_animation3.mp4" type="video/mp4"/>
+				</video>
+					<!-- <p class="s2p">WE ARE</p>
+					
+					<p class="s2p">A TOTAL</p>
+					
+					<p class="s2p">BEVERAGE</p>
+					
+					<p class="s2p">COMPANY</p>
+					 -->
+			</div>
+			<div class="slide" data-anchor="slide3"> 
+				<p class="s3t_txt">Letter to Shareowners</p>
+				<p class="s3tit">“AS WE GROW, WE CREATE MORE VALUE FOR OUR PARTNERS.”</p>
+				
+				<div class="s3_tbox">
+					<i class="material-icons">control_point</i>
+					<p class="s3tit2">Click to read Muhtar Kent’s 2017 Letter</p>
+				</div>
+			</div>
+			<div class="slide" data-anchor="slide4"> 
+				<p class="s4t_txt">2017 Highlights</p>
+				<div class="s4box">
+					<div class="s4t">
+						<div class="s4t_l">
+							<div class="tll">
+								<p class="s4tit">LIFTED AND SHIFTED BRANDS</p>
+							</div>	
+							<div class="tlr">
+								<p class="s4txt">We scaled glaceau smartwater®, ZICO® coconut water and Appletiser® into new markets. The expansion of our Venturing & Emerging Brands (VEB) model to Europe has shown early signs of success.
+								
+								<i class="material-icons s4plus">control_point</i>
+								</p>
+
+							</div>	
+						</div>
+						<div class="s4t_r">
+							<div class="trl">
+								<img src="images/cokezero_3.png" alt="">
+							</div>	
+							<div class="trr">
+								<p class="s4tit">ACCELERATED COCA-COLA ZERO SUGAR GROWTH GLOBALLY</p>
+								<p  class="s4txt">We introduced a new formula for Coca-Cola Zero Sugar™ in 20 markets, including the United States, helping deliver double-digit revenue growth for the brand globally.
+									<i class="material-icons s4plus">control_point</i>
+								</p>
+							</div>	
+						</div>
+					</div>
+					<div class="s4b">
+						<div class="s4b_l">
+							<div class="bll">
+								<p class="s4tit">ACQUIRED ADES PLANT-BASED BEVERAGES</p>
+								<p  class="s4txt">In Latin America, along with our bottling partners, we acquired AdeS®, the leading soy-based beverage 
+								brand in the region. The brand is now being rolled out across key markets in Europe.
+									<i class="material-icons s4plus">control_point</i>
+								</p>
+							</div>		
+							<div class="blr">
+								<img src="images/ades_2.png" alt="">
+							</div>	
+						</div>
+						<div class="s4b_r">
+							<div class="brl">
+							<p  class="s4txt">Topo Chico®, a premium sparkling mineral water, and Barrilitos Aguas Frescas™, a flavored, non?
+						carbonated water beverage, were announced as part of the Company’s portfolio in the United States. 
+						Both add to our growing list of low- and no-sugar drinks.
+									<i class="material-icons s4plus">control_point</i>
+								</p>
+							</div>	
+							<div class="brr">
+								<p class="s4tit">INTRODUCED TOPO CHICO AND BARRILITOS</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide" data-anchor="slide5"> 
+				<h1 class="s5txt">WE ARE REIMAGINING WHAT’S POSSIBLE</h1>
+			</div>
+		</div>
+	</div>
+	<script>
+		new fullpage('#fullpage', {
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true,
+		sectionsColor : ['#F1F3F4', '#fff'],
+		dragAndMove: true,
+		anchors: ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', ],
+		scrollBar:true,
+		dragAndMove: true,
+		continuousHorizontal: true,
+		scrollOverflow: true,//스크립트 따로 필요 vendor 파일
+		});
+	</script>
+	<style>
+
+	@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:800');
+		/* font-family: 'M PLUS 1p', sans-serif; */
+		 @font-face {
+			 font-family:'TCCC';
+			 src:url(fonts/TCCC-UnityText-Bold.woff) format('woff');
+			 src:url(fonts/TCCC-UnityText-Regular.woff) format('woff');
+			}
+		/*======= reset=======================================	 */
+		*{margin: 0;	padding: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;}
+		body{
+			font: normal 1em/1.5  'tccc';
+		}
+		
+		.section{}
+		.section .com_home,
+		.section .com_re{position: absolute;
+			z-index: 10;
+			bottom:25px;
+			font-size: 0.75em;}
+		
+		.section .com_home a,
+		.section .com_re a{display: block;
+			color: #f00;
+			font-weight:normal;
+			transition: 1s;}
+
+		.section .com_home{left: 20px;}
+		.section .com_re{right: 20px;}
+
+		.section .com_home:hover a,
+		.section .com_re:hover a{color:red;}
+	
+	/* 1----------------------------------------------------------------------------------------- */
+		.section .slide:nth-child(1){background: url(images/template1_cover.jpg) center center no-repeat;
+			-webkit-background-size:cover;
+			background-size:cover ;
+			position: relative;}
+		
+		.section .slide:nth-child(1) .s1t_txt{
+			position: absolute;
+			left: 50%;
+			font-size: 1.1em;
+			color: #fff;
+			top:15px;
+			margin-left: -88px;
+			font-weight: bold;
+		}
+
+		.section .slide:nth-child(1) .s1tit,
+		.section .slide:nth-child(1) .s1tit2{color: #fff;	}
+
+		.section .slide:nth-child(1) .s1tit{font-size:3.2vw;
+			font-weight:bold;}
+		.section .slide:nth-child(1) .s1tit2{font-size:2.6vw;
+			line-height: 1em;}
+	/* 2----------------------------------------------------------------------------------------- */
+		.section .slide:nth-child(2){}
+			
+		.section .slide:nth-child(2) #vd{max-width: 100%;
+		max-height: 100%;}
+
+		/* animation------------------------------------------------------------------------- */
+		@keyframes drink1{
+			0%{}
+			
+		}
+		@keyframes drink2{
+			0%{}
+		}
+		@keyframes drink3{
+			0%{}
+		}
+		@keyframes drink4{
+			0%{}
+		}
+
+	/* 3----------------------------------------------------------------------------------------- */
+		.section .slide:nth-child(3){background: url(images/template1_muhtar.jpg) 100% 100% no-repeat;
+			-webkit-background-size:cover;
+			background-size:cover ;
+			position: relative;}
+
+		.section .slide:nth-child(3) .s3t_txt{
+			position: absolute;
+			left: 50%;
+			font-size: 1.1em;
+			color: #E41E2A;
+			top:15px;
+			margin-left: -88px;
+			font-weight: bold;
+		}
+		.section .slide:nth-child(3) .s3tit,
+		.section .slide:nth-child(3) .s3tit2{color: #E41E2A;}
+
+		.section .slide:nth-child(3) .s3tit{font-size: 5.8em;
+			font-weight:bold;
+			max-width: 1100px;
+			margin: 0px auto;
+			line-height: 1.1em;
+			color: #E41E2A;}
+
+		.section .slide:nth-child(3) .s3_tbox{height: 40px;
+			/* width: 80%; */
+			margin: 0px auto;
+			display: inline-block;
+		}
+		
+
+		.section .slide:nth-child(3) .s3_tbox > i{font-size: 2em;
+		line-height: 40px;
+		/* padding-right: 5px; */
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		display:block;
+		color: #E41E2A;
+		float: left;
+		/* 
+		position: absolute;
+		left: 0;
+		bottom: -5px; */
+		transition: 0.5s;
+		z-index: 100;}
+
+		.section .slide:nth-child(3) .s3_tbox .s3tit2{font-size:1.6em;
+			line-height: 1em;
+			/* padding-top: 30px; */
+			line-height:40px; margin: 0px auto;
+			text-align: center;
+			/* position: relative; */
+			/* max-width: 630px; */
+			cursor: pointer;	
+			transition: 0.5s;	
+			float: left;}
+
+		.section .slide:nth-child(3) .s3_tbox:hover .s3tit2, .section .slide:nth-child(3) .s3_tbox:hover i{color: #fff;}
+	/* 4----------------------------------------------------------------------------------------- */
+		.section .slide:nth-child(4){
+		/* padding: 20px; */
+		width: 100%;
+		height: 100%;
+		position: relative;}
+
+		.section .slide:nth-child(4) .s4t_txt{position: absolute;
+			left: 50%;
+			font-size: 1.1em;
+			color: #E41E2A;
+			top:15px;
+			margin-left: -88px;
+			font-weight: bold;}
+
+		.section .slide:nth-child(4) .s4box{
+			width: 100%;
+			padding:30px 12%;
+		}
+
+		.section .slide:nth-child(4) .s4box .s4t,
+		.section .slide:nth-child(4) .s4box .s4b{
+			width: 100%;
+			height: 50%;
+			/* border: 1px solid #ff0; */
+		}
+		
+
+		.section .slide:nth-child(4) .s4box .s4t{*zoom: 1;}
+		.section .slide:nth-child(4) .s4box .s4t:after{content: '';display: block; clear: both;	}
+		.section .slide:nth-child(4) .s4box .s4t .s4t_l{width: 50%;
+			height: 100%;
+			float: left;
+			*zoom: 1;	
+			margin-top: 20px;}
+
+		.section .slide:nth-child(4) .s4box .s4t .s4t_l:after{content: '';display: block; clear: both;	}
+
+		.section .slide:nth-child(4) .s4box .s4t .s4t_l .tll,
+		.section .slide:nth-child(4) .s4box .s4t .s4t_l .tlr{width: 50%;
+			float: left;
+			height: 100%;}
+
+		.section .slide:nth-child(4) .s4box .s4t .s4t_l .tll .s4tit{color: #E41E2A;
+			font-weight: bold;
+			text-align: right;
+			font-size: 1em;
+			padding-right:20px;
+			width: 100%;}
+
+		.section .slide:nth-child(4) .s4box .s4t .s4t_l .tlr .s4txt{/* color: #E41E2A; */
+		/* font-weight: bold; */
+		text-align: left;	
+		font-size: 0.8em;
+		color: #000;
+		}
+
+
+		.section .slide:nth-child(4) .s4box .s4t .s4t_r{
+			width: 50%;
+			float: left;	
+			height: 100%;
+		}
+
+		.section .slide:nth-child(4) .s4box .s4t .s4t_r .trl{float: left;	
+			width: 50%;
+			height: 100%;}
+		.section .slide:nth-child(4) .s4box .s4t .s4t_r .trl img{width: 90%;
+			/* height: 100%; */}
+		.section .slide:nth-child(4) .s4box .s4t .s4t_r .trr{float: left;
+		width: 50%;
+		height: 100%;
+		*zoom: 1;}
+
+		
+		.section .slide:nth-child(4) .s4box .s4t .s4t_r .trr .s4tit{font-weight: bold;
+			text-align: left;
+			font-size: 1em;
+			padding-right:20px;
+			color: #E41E2A;
+			margin-bottom: 15px;
+			letter-spacing: 1px;}
+
+		.section .slide:nth-child(4) .s4box .s4t .s4t_r .trr .s4txt{text-align: left;	
+		font-size: 0.75em;
+		color: #000;}
+
+
+		.section .slide:nth-child(4) .s4box .s4b{*zoom: 1;}
+		.section .slide:nth-child(4) .s4box .s4b:after{content: '';display: block; clear: both;}
+			
+		.section .slide:nth-child(4) .s4box .s4b .s4b_l{width: 50%;
+			float: left;	
+			height: 100%;
+			*zoom: 1;}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_l:after{content: '';display: block; clear: both;	}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_l .bll{
+			width: 50%;
+			height: 100%;
+			float: left;
+		}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_l .bll .s4tit {font-weight: bold;
+			text-align: left;
+			font-size: 1em;
+			/* padding-right:20px; */
+			color: #E41E2A;
+			margin-bottom: 15px;
+			letter-spacing: 1px;}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_l .bll .s4txt{text-align: left;	
+		font-size: 0.75em;
+		color: #000;}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_l .blr{
+		
+			width: 50%;
+			height: 100%;
+			float: left;}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_l .blr img{width: 90%;}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_r{width: 50%;
+			float: left;
+			height: 100%;
+			margin-top: 20px;}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_r .brl,
+		.section .slide:nth-child(4) .s4box .s4b .s4b_r .brr{width: 50%;
+		height: 100%;
+		float: left;}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_r .brl .s4txt{text-align: left;	
+		font-size: 0.75em;
+		color: #000;
+		width: 100%;
+		height: 100%;}
+		
+		.section .slide:nth-child(4) .s4box .s4b .s4b_r .brr .s4tit {font-weight: bold;
+			text-align: left;
+			font-size: 1em;
+			/* padding-right:20px; */
+			color: #E41E2A;
+			margin-bottom: 15px;
+			letter-spacing: 1px;}
+
+		
+		.s4tit{line-height: 1.2;
+		font-weight: 900;}
+
+		.s4plus{display: block;
+		cursor: pointer;
+		color:#616262;
+		transition:0.5s;
+		margin-top: 15px;}
+	  
+	   .s4plus:hover{color: #fff;}
+	/* 5----------------------------------------------------------------------------------------- */
+		.section .slide:nth-child(5){background: url(images/template1_reimagining.jpg) center center no-repeat;
+			-webkit-background-size:cover;
+			background-size:cover ;
+			/* position: relative; */
+			}
+		.section .slide:nth-child(5) .s5txt{
+			/* position: absolute; */
+			font-weight: 900;
+			font-size: 5vw;
+			/* top: 50%;
+			margin-top: -80px; */
+			line-height: 1em;
+			color: #fff;
+		}
+
+
+			.fp-controlArrow{top:0;
+				margin: 0;}
+			.fp-controlArrow.fp-prev,
+			.fp-controlArrow.fp-next{
+				border: none;	
+				width: 40px;
+				height: 40px;
+				/* background: #fff; */
+				line-height: 40px;
+				/* transition: 1s; */
+				color: #f00;
+			}
+		
+		/*-------- section button------------------------------------------------- */
+
+		.fp-controlArrow.fp-prev:after{content: '←';}
+		.fp-controlArrow.fp-next:after{content: '→';}
+
+		.fp-controlArrow.fp-prev:after,
+		.fp-controlArrow.fp-next:after{
+		font-size: 40px;
+		font-weight: bold;
+		 transition: 1s;}
+
+		.fp-controlArrow.fp-prev:hover:after,
+		.fp-controlArrow.fp-next:hover:after{
+			color:#f00;
+		}
+		
+
+
+	/*------------- media -----------------------------------------------------------*/
+
+		@media only screen and (max-width:800px){	
+		
+		.section .slide:nth-child(1) .s1tit{
+			font-size:6vw !important;
+			font-weight:bold;}
+		.section .slide:nth-child(1) .s1tit2{font-size:8vw;
+			line-height: 1em;}
+
+		.section .slide:nth-child(3) .s3tit{font-size: 5.5vw !important;}
+		
+		.section .slide:nth-child(3) .s3_tbox > i{font-size:3vw ;}
+		.section .slide:nth-child(3) .s3_tbox .s3tit2{font-size:2.5vw;}
+
+
+		.section .slide:nth-child(4) .s4box{padding: 60px 12%;
+			/* padding: 0;	 */
+		}
+		
+		.section .slide:nth-child(4) .s4box .s4t .s4t_l,.section .slide:nth-child(4) .s4box .s4t .s4t_r{
+			width: 100%;
+			font: none;
+		}
+
+		.section .slide:nth-child(4) .s4box .s4b .s4b_l,.section .slide:nth-child(4) .s4box .s4b .s4b_r{
+			width: 100%;
+			font: none;
+		}
+		
+		.section .slide:nth-child(4) .s4box .s4t .s4t_l, .section .slide:nth-child(4) .s4box .s4t .s4t_r{
+			margin-bottom: 20px;	
+		}
+	}
+
+		@media only screen and (max-width:450px){
+			.section .slide:nth-child(1) .s1t_txt{font-size: 3.5vw;}
+
+			.section .slide:nth-child(1) .s1tit{
+				font-size:5vw;
+				font-weight:bold;}
+			
+			.section .slide:nth-child(1) .s1tit2{font-size:7vw;
+			line-height: 1em;}
+
+			.section .slide:nth-child(3) .s3tit{font-size: 6vw;
+				text-align: left;
+				letter-spacing:0;
+				width: 90%;}
+			
+			.section .slide:nth-child(3) .s3_tbox{margin-left: 10px;
+			display: block;}
+			.section .slide:nth-child(3) .s3_tbox > i{font-size:5vw ;}
+			.section .slide:nth-child(3) .s3_tbox .s3tit2{font-size:4vw;
+			text-align: left;
+			width: 250px;
+			line-height: 1.2em;
+			padding-top: 10px;}
+
+			.section .slide:nth-child(4) .s4box .s4t .s4t_r .trl img{width: 100%;}
+
+			.section .slide:nth-child(4) .s4t_txt{margin-left: -70px;}
+		}
+
+		@media only screen and (max-width:425px){
+			.section .slide:nth-child(1) .s1t_txt{font-size: 4vw;}
+		}
+
+		@media only screen and (max-width:320px){
+			.section .slide:nth-child(1) .s1t_txt{font-size: 5vw;}
+
+			.section .slide:nth-child(3) .s3t_txt{font-size:4vw;
+			margin-left: -70px;}
+		}
+	</style>
+ </body>
+</html>
